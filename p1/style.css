@@ -32,8 +32,11 @@ header a{
 }
 
 .box{
-    width: 500px;
+    width: 400px;
     padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .btn{
@@ -51,7 +54,39 @@ header a{
 .image{
     border-radius: 50px;
 }
+.p{
+   text-align: center;
+   font-size: 40px;
+}
 
 .title{
+    font-size: 30px;
+    
+}
+
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: darkgray;
+    color:white;
+    font-size: large;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 60px;
+    
 
 }
+.serv{
+    margin: 10px;
+
+}
+
