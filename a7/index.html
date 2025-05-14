@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #result{
-            margin-left: 200px;
-            color: brown;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
     
 </head>
 <body>
-    <div id="math"></div>
+    <div class="row">
+    <div id="input">
     Enter First Number:
+    <p>
     <input type="text" placeholder="Enter number" id="num1">
-    <br><br>
+    </p>
     Enter Second Number:
+    <p>
     <input type="text" placeholder="Enter number" id="num2">
-    <div class="sty">
-    <button onclick="calculateAll()">Submit</button>
+    </p>
+    <button onclick="calculateAll()">Calculate</button>
     </div>
+
+    <div id="res">
     <div id="result"></div>
+    </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

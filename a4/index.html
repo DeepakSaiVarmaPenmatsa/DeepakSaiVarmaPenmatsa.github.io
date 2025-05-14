@@ -4,29 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Facebook</h1>
-    <form>
-        <h2>Create a new account</h2>
-        <p>It's quick and easy</p>
-        <hr>
-        <p>Date of birth</p>
-        <input type="date">
-        <p>Gender</p>
-        <label for="chk">Female</label>
-        <input type="checkbox" id="chk">
-        <label for="ck2">Male</label>
-        <input type="checkbox" id="chk2">
-        <label for="ck3">Custom</label>
-        <input type="checkbox" id="chk3">
-        <br>
+    <div class="container">
+    <div class="title"><h1 style="color: blue; text-align: center;">Facebook</h1></div>
+    <h2 style="text-align: center;">Create a new aaccount</h2>
+    <p style="text-align: center;">Its quick and easy</p>
+    <hr>
+    <form >
+        <div>
+            <div class="group">
+                <div>
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="First name">
+                </div>
+                <div>
+                    <label for="surname"></label>
+                    <input type="text" id="surname" placeholder="Surname">
+                </div>
+            </div>
+            
+            <label style="text-align: left;">Date of birth</label>
+            <div class="date">
+               
+                <p><select id="day"><option disabled selected>Day</select></p>
+                <p><select id="n2"></select></p>                
+                <p><select id="year"><option disabled selected>Day</select></p>
+            </div>
 
-        <input type="text" placeholder="Mobile number or email address">
-        <br><br>
-        <input type="password" placeholder="New password">
-        <br><br>
-        <input type="submit" placeholder="sign up">
+
+            <h4>Gender</h4>
+            <div class="gender-options">
+                <div>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="gender" value="custom">Custom</label>
+                </div>
+            </div>    
+
+            <div class="form-grp">
+                <div class="form-con">
+                    <label for="email"></label>
+                    <input type="text" id="email" placeholder="Mobile number or email address">
+                </div>
+                <div class="form-con">
+                    <label for="password">
+                        <input type="password" id="password" placeholder="New password">
+                    </label>
+                </div>
+            </div>
+             
+                <div style="margin-top: 15px; font-size: 0.8rem; color: #777;">
+                  By clicking Sign Up, you agree to our <a href="#" style="color: #1877f2; text-decoration: none;">Terms</a>, <a href="#" style="color: #1877f2; text-decoration: none;">Privacy Policy</a> and <a href="#" style="color: #1877f2; text-decoration: none;">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+                </div>
+                <button type="submit">Sign Up</button>
+                </div>
     </form>
+         <div >
+            <a href="#" class="log">Already have an account</a>
+         </div>
+    </div>
+    <script src=""></script>
 </body>
 </html>

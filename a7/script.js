@@ -6,6 +6,6 @@ function calculateAll(){
     var mul=a*b;
     //var div=a/b;
    document.getElementById("result").innerHTML=
-   "sum"+ sum +"<br>"+"Dif"+dif+"<br>"+"mul"+mul;
+   "Addition:"+ sum +"<br>"+"Difference"+dif+"<br>"+"Multiplication:"+mul;
 
 }
