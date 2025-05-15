@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Filtering</h1>
+    <input type="text" placeholder="Search fruit" id="text">
+    <button onClick="searchFruit()">Search</button>
+    <ul id="filter"></ul>
+
+    <script>
+        let fruits=['apple','mango','orange','pineapple']
+
+        function displayFruits(){
+            let str1="";
+            for(let i=0;i<fruits.length;i++){
+                str1+="<li>"+fruits[i]+"</li>";   
+            }
+            document.getElementById('filter').innerHTML=str1;
+        }
+
+        function searchFruit(){
+            let t1=document.getElementById('text').value;
+            let str2="";
+            let found=false;
+            for(let i=0;i<fruits.length;i++){
+                if(fruits[i].toLowerCase()==t1){
+                    str2+= "<li>"+fruits[i]+"</li>"
+                    found=true;
+                }
+            }
+            if(!found){
+                str2="<li>Not found</li>";
+            }
+            document.getElementById('filter').innerHTML=str2;
+        }
+        window.onload=displayFruits;
+
+    </script>
+
+</body>
+</html>

@@ -1,28 +1,41 @@
+const calc=(op) => {
+    let n1=parseFloat(document.getElementById("n1").value);
+    let n2=parseFloat(document.getElementById("n2").value);
+    switch(op){
+        case "add":
+        result.innerHTML="Addition" + add(n1,n2);
+        break;
 
-function addition() {
-    var a = Number(document.getElementById("num1").value); 
-    var b = Number(document.getElementById("num2").value);
-    document.getElementById("addition").innerHTML = "Addition: " + (a + b);
-}
+         case "subtract":
+        result.innerHTML="Addition" + add(n1,n2);
+        break;
 
-function subtraction() {
-    var a = Number(document.getElementById("num1").value); 
-    var b = Number(document.getElementById("num2").value);
-    document.getElementById("subtraction").innerHTML = "Subtraction: " + (a - b);
-}
+         case "add":
+        result.innerHTML="Subtraction" + subtract(n1,n2);
+        break;
 
-function multiplication() {
-    var a = Number(document.getElementById("num1").value); 
-    var b = Number(document.getElementById("num2").value);
-    document.getElementById("multiplication").innerHTML = "Multiplication: " + (a * b);
-}
+         case "multiply":
+        result.innerHTML="Multiplication" + multiply(n1,n2);
+        break;
 
-function division() {
-    var a = Number(document.getElementById("num1").value); 
-    var b = Number(document.getElementById("num2").value);
-    if (b === 0) {
-        document.getElementById("division").innerHTML = "Division: Cannot divide by zero";
-    } else {
-        document.getElementById("division").innerHTML = "Division: " + (a / b).toFixed(2);
+         case "divide":
+        result.innerHTML="Division" + divide(n1,n2);
+        break;
     }
-}
+};
+
+const add = (a,b) =>{
+    return a+b;
+};
+
+const subtract= (a,b) => {
+    return a-b;
+};
+
+const multiply= (a,b) => {
+    return a*b;
+};
+
+const divide= (a,b) => {
+    return a/b;
+};

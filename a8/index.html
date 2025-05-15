@@ -18,26 +18,17 @@
     </style>
 </head>
 <body>
-    <label>Enter First Number:</label>
-    <input type="text" placeholder="Enter number" id="num1">
-    <br><br>
-
-    <label>Enter Second Number:</label>
-    <input type="text" placeholder="Enter number" id="num2">
-    <br><br>
-
-    <div class="sty">
-        <button onclick="addition()">+</button>
-        <button onclick="subtraction()">-</button>
-        <button onclick="multiplication()">*</button>
-        <button onclick="division()">/</button>
+    <div>
+        <div>
+            <p><input type="number" id="n1"></p>
+            <p><input type="number" id="n2"></p>
+            <button onClick="calc('add')">+ </button>
+            <button onClick="calc('subtract')">-</button>
+            <button onClick="calc('multiply')">*</button>
+            <button onClick="calc('divide')">/</button>
+        </div>
+        <div id="result"></div>
     </div>
-
-    <div id="addition"></div>
-    <div id="subtraction"></div>
-    <div id="multiplication"></div>
-    <div id="division"></div>
-
     <script src="script.js"></script>
 </body>
 </html>
