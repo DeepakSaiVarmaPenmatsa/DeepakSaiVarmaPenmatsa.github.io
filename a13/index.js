@@ -10,4 +10,4 @@ const products=[
 ];
 
 let newPrice= products.map((price) => price+5);
- console.log(elements.name+" "+elements.newPrice));
+ console.log(newPrice);
